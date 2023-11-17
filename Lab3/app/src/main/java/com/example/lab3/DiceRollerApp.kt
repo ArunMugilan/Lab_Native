@@ -3,7 +3,7 @@
 * S63746
 */
 
-/*package com.example.lab3
+package com.example.lab3
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -74,4 +74,4 @@ fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
             Text(text = stringResource(R.string.roll), fontSize = 24.sp)
         }
     }
-}*/
+}
