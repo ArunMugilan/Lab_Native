@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
@@ -51,19 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
     // Helper method to convert operator string to corresponding integer
     private int getOperator(String bodmas) {
-        switch (bodmas) {
-            case "+":
-                return 0;
-            case "-":
-                return 1;
-            case "*":
-                return 2;
-            case "/":
-                return 3;
-            default:
-                return 0;
-        }
+        // Create a map to associate operators with their corresponding values
+        Map<String, Integer> operatorMap = new HashMap<>();
+        operatorMap.put("+", 0);
+        operatorMap.put("-", 1);
+        operatorMap.put("*", 2);
+        operatorMap.put("/", 3);
+
+        // Use the map to get the value for the given operator, or return 0 for default
+        return operatorMap.getOrDefault(bodmas, 0);
     }
+
 
     // Method to update the displayed question based on the selected level
     private void nextQuestion() {
@@ -100,23 +100,35 @@ public class MainActivity extends AppCompatActivity {
             int oprtr = random.nextInt(4);
 
             // Update the operator based on the random number
-            switch (oprtr) {
-                case 0:
-                    Oprtr.setText("+");
-                    break;
-                case 1:
-                    Oprtr.setText("-");
-                    break;
-                case 2:
-                    Oprtr.setText("*");
-                    break;
-                case 3:
-                    Oprtr.setText("/");
-                    break;
+            if (oprtr == 0) {
+                Oprtr.setText("+");
+            } else if (oprtr == 1) {
+                Oprtr.setText("-");
+            } else if (oprtr == 2) {
+                Oprtr.setText("*");
+            } else if (oprtr == 3) {
+                Oprtr.setText("/");
             }
+
 
             // Clear the EditText
             answerText.getText().clear();
+        }
+    }
+
+    // Helper method to calculate the answer based on the operator
+    private int calculateAnswer(int firstNumber, int secondNumber, int operator) {
+        if (operator == 0) {
+            return firstNumber + secondNumber;
+        } else if (operator == 1) {
+            return firstNumber - secondNumber;
+        } else if (operator == 2) {
+            return firstNumber * secondNumber;
+        } else if (operator == 3) {
+            // Ensure non-zero divisor for division
+            return (secondNumber != 0) ? firstNumber / secondNumber : 0;
+        } else {
+            return 0;
         }
     }
 
@@ -149,23 +161,5 @@ public class MainActivity extends AppCompatActivity {
         // Update the question for the next round
         nextQuestion();
     }
-
-
-    // Helper method to calculate the answer based on the operator
-    private int calculateAnswer(int firstNumber, int secondNumber, int operator) {
-        if (operator == 0) {
-            return firstNumber + secondNumber;
-        } else if (operator == 1) {
-            return firstNumber - secondNumber;
-        } else if (operator == 2) {
-            return firstNumber * secondNumber;
-        } else if (operator == 3) {
-            // Ensure non-zero divisor for division
-            return (secondNumber != 0) ? firstNumber / secondNumber : 0;
-        } else {
-            return 0;
-        }
-    }
-
 }
 
