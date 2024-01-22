@@ -9,9 +9,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88127e08-4fdd-4c45-925d-848d237eb3a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../LabTest/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LabTest/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LabTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LabTest/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="748533b1-be98-4f66-8422-72da4fcd8a81" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../Lab 7/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Lab 7/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LabTest/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LabTest/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../LabTest/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../LabTest/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +25,21 @@
       <ProjectState />
     </projectState>
   </component>
-  <component name="ProjectId" id="2aCOrw9rQWmiAhpkxDc1G6yAL2S" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2aCRuwQ60tanKRyYuOUlbRWalSv" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -36,12 +51,14 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/Users/USER/AndroidStudioProjects/Lab_Native/Lab 6/Task1.1/PhoneCallDial",
+    "last_opened_file_path": "C:/Users/USER/AndroidStudioProjects/Lab_Native/Lab 6/AllTasks/PhoneCallingSample 2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="Task1.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -110,11 +127,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="88127e08-4fdd-4c45-925d-848d237eb3a4" name="Changes" comment="" />
-      <created>1703819297799</created>
+      <changelist id="748533b1-be98-4f66-8422-72da4fcd8a81" name="Changes" comment="" />
+      <created>1703820801344</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1703819297799</updated>
+      <updated>1703820801344</updated>
     </task>
     <servers />
   </component>
